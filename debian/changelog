@@ -1,3 +1,37 @@
+dh-virtualenv (1.2.2-1.4build1) noble; urgency=medium
+
+  * No-change rebuild to build with python3.12 only.
+
+ -- Matthias Klose <doko@ubuntu.com>  Sat, 16 Mar 2024 23:14:28 +0100
+
+dh-virtualenv (1.2.2-1.4) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Drop Sphinx docs (Closes: #1042646)
+
+ -- Uwe Kleine-König <ukleinek@debian.org>  Fri, 17 Nov 2023 19:40:18 +0100
+
+dh-virtualenv (1.2.2-1.3) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Cherry-pick upstream patch for Python 3.11 support (Closes: #1030170)
+
+ -- Kunal Mehta <legoktm@debian.org>  Thu, 02 Feb 2023 14:10:21 -0500
+
+dh-virtualenv (1.2.2-1.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Rebuild to update python3.x-venv dependency. (Closes: #1017046)
+
+ -- Kunal Mehta <legoktm@debian.org>  Thu, 25 Aug 2022 15:01:52 -0400
+
+dh-virtualenv (1.2.2-1.1) unstable; urgency=medium
+
+  * NMU.
+  * Rebuild to update python3.X-venv dependency. Closes: #984766.
+
+ -- Vincent Bernat <bernat@debian.org>  Mon, 08 Mar 2021 09:02:45 +0100
+
 dh-virtualenv (1.2.2-1) unstable; urgency=medium
 
   * New upstream release (Closes: #970810)

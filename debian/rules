@@ -1,9 +1,6 @@
 #!/usr/bin/make -f
 
 DH_ARGS ?=
-ifeq (,$(findstring nodoc, $(DEB_BUILD_OPTIONS)))
-	DH_ARGS += --with sphinxdoc
-endif
 
 PYTHON_VERSION := $(shell python3 -c 'import sys; print("%s.%s" % sys.version_info[:2])')
 
@@ -22,9 +19,3 @@ override_dh_auto_build:
 
 override_dh_gencontrol:
 	dh_gencontrol -- -Vpyversion=$(PYTHON_VERSION)
-
-ifeq (,$(findstring nodoc, $(DEB_BUILD_OPTIONS)))
-override_dh_installdocs:
-	python3 setup.py build_sphinx
-	dh_installdocs doc/_build/html
-endif
