@@ -1,3 +1,9 @@
+dh-virtualenv (1.2.2-1.4build1bb1) noble; urgency=medium
+
+  * dh_virtualenv/deployment.py: fix virtualenv options
+
+ -- Balabit Platform Team <devnull@dev.null>  Fri, 29 Nov 2024 19:00:22 +0100
+
 dh-virtualenv (1.2.2-1.4build1) noble; urgency=medium
 
   * No-change rebuild to build with python3.12 only.
